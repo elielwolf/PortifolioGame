@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.click_menu{
+
+    @apply absolute;
+    @apply w-8;
+    @apply h-0.5;
+    @apply bg-white;
+    @apply rounded-full;
+
+    @apply before:absolute;
+    @apply before:w-8;
+    @apply before:h-0.5;
+    @apply before:bg-white;
+    @apply before:rounded-full;
+    @apply before:-translate-y-3;
+
+    @apply after:absolute;
+    @apply after:w-4;
+    @apply after:left-1/2;
+    @apply after:h-0.5;
+    @apply after:bg-white;
+    @apply after:rounded-full;
+    @apply after:translate-y-3;
+
+    @apply transition-all;
+    @apply ease-in-out;
+    @apply duration-75;
+
+    @apply before:transition-all;
+    @apply before:ease-in-out;
+    @apply before:duration-75;
+
+    @apply after:transition-all;
+    @apply after:ease-in-out;
+    @apply after:duration-200;
+
+}
+
+.clicked_menu{
+    @apply invisible;
+    @apply after:visible;
+    @apply before:visible;
+
+    @apply after:w-8;
+    @apply after:left-0;
+
+    @apply after:translate-y-0;
+    @apply before:translate-y-0;
+
+    @apply before:-rotate-45;
+    @apply after:rotate-45;
+}
+
+.text-glow{
+    text-shadow: 0 0 5px white;
+}
+
+.text-glow-orange{
+    text-shadow: 0 0 2px yellow,
+                 0 0 5px orange;
+}

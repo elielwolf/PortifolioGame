@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Outfit&display=swap" rel="stylesheet">
+    <title>Starship War</title>
+</head>
+<body>
+    <header class="bg-black  sticky top-0 z-50">
+        <nav class="flex w-full text-xl justify-between p-5 ">
+            <div class="text-white flex gap-2 uppercase hover:font-BungeeSpice cursor-pointer justify-center items-center">
+                <img src="https://cdn.shopify.com/s/files/1/0017/9578/4765/products/358_1200x1200.jpg?v=1572443528" class="w-8 h-8 rounded-full">
+                Eliel P.F.
+            </div>
+            <ul class="text-white md:flex gap-5 uppercase hidden">
+                <li class="transition hover:-translate-y-1 hover:font-BungeeSpice ">
+                    <a href="#home" name="home" class="menu-dsk">home</a>
+                </li>
+                <li class="transition  hover:-translate-y-1 hover:font-BungeeSpice ">
+                    <a href="#projects" name="projects" class="menu-dsk">projects</a>
+                </li>
+                <li class="transition hover:-translate-y-1 hover:font-BungeeSpice ">
+                    <a href="#about" name="about" class="menu-dsk">about me</a>
+                </li>
+                <li class="transition  hover:-translate-y-1 hover:font-BungeeSpice ">
+                    <a href="#contacts" name="contacts" class="menu-dsk">contacts</a>
+                </li>
+            </ul>
+            <div class="md:hidden relative w-20 flex flex-row-reverse">
+                <div class="w-12 h-12 menu relative flex items-center flex-row-reverse font-BungeeSpice">
+                    <div class="click_menu"></div>
+                </div>    
+            </div>
+            <button class="hidden md:flex font-BungeeSpice mr-5 hover:-translate-y-1 hover:scale-125 transition btn_fun">
+                fun
+            </button>
+        </nav>
+       
+    </header>
+    <div class=" bg-black h-full fixed w-full flex items-center justify-center transition-all top-0 hidden z-40 ease-in-out duration-500" id="menu">
+        <ul class="text-white flex flex-col h-full  w-full bg-black gap-7 uppercase items-center justify-center  text-4xl">
+            <li class="transition  hover:-translate-y-1 hover:font-BungeeSpice menu-mob">
+                <a href="#home">home</a>
+            </li>
+            <li class="transition  hover:-translate-y-1 hover:font-BungeeSpice menu-mob">
+                <a href="#projects">projects</a>
+            </li>
+            <li class="transition hover:-translate-y-1 hover:font-BungeeSpice menu-mob">
+                <a href="#about">about me</a>
+            </li>
+            <li class="transition  hover:-translate-y-1 hover:font-BungeeSpice menu-mob">
+                <a href="#contacts">contacts</a>
+            </li>
+        </ul>
+    </div>
+
+    <section id="home" name="home" class="bg-black h-screen text-white relative">
+        <canvas id="matrix" class="absolute z-10"></canvas>
+        <div class="flex items-center h-full flex-col justify-evenly md:justify-start absolute z-30 ">
+            <h1 class="text-7xl md:mt-5 text-center lg:mt-52 mt-3 text-glow">Hi, I'm <a href="#about" class="font-BungeeSpice pt-36 text-glow-orange">Eliel</a> a web dev!</h1>
+            <p class="md:text-4xl md:mt-50 mt-10 text-2xl text-center text-glow">
+                I develop websites and web applications.
+                I work with HTML, CSS and JavaScript to create user interfaces and with PHP, Python or NodeJS to create the backend logic.</p>
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="h-screen bg-[#383838]">
+        <div class="title font-BungeeSpice flex justify-center text-5xl  p-10">
+            My Projects
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 place-items-center justify-center items-center  gap-4 md:gap-14">
+            <div class="relative lg:w-80 lg:h-32 md:w-64 md:h-32 w-56 h-32">
+                <div class="lg:w-80 lg:h-32 md:w-64 md:h-32 w-56 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] p-0.5 animate-gradient-xy absolute blur-lg z-10"></div>
+                <div class="lg:w-80 lg:h-32 md:w-64 md:h-32 w-56 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] p-0.5 animate-gradient-xy absolute z-20">
+                  <div class="w-full h-full bg-black flex justify-center items-center flex-col">
+                    <h1 class="text-white uppercase text-4xl">wolf</h1>
+                    <div class="w-52 h-1 rounded-full my-2 bg-[#383838]">
+                        <div class="bg-gradient-to-r from-[#EC9F05] to-[#FF4E00]  rounded-full h-full" style="width: 25%;"></div>
+                    </div>
+                    <p class="text-white text-2xl">In progress</p>
+                </div>  
+                </div>
+            </div>
+    </section>
+    
+    <section id="about" class="h-screen bg-black ">
+        
+    </section>
+
+    <section id="fun" class="h-screen bg-black bg-cover relative hidden">
+        <div class="w-full h-full hidden items-center justify-center text-center mobile-warning">
+            <h1 class="uppercase text-white text-5xl ">rotate your phone</h1>
+        </div>
+        <div class="game flex-col h-full justify-end bg-transparent flex"> 
+            
+            <div class="flex items-end justify-end gap-5 p-5 absolute top-0.5 right-0">
+                <p class="text-white text-2xl font-BungeeSpice" id="points">0</p>
+                <p class="text-white text-2xl font-BungeeSpice">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>
+                </p>
+            </div>
+            <div class="shoots  h-full w-full relative bg-transparent">
+                <div id="enemy" class="w-10 h-10  absolute transition m-auto hidden z-10">
+                    <img src="./assets/aircraft.svg">
+                </div>
+                <div id="shoot" class="w-0.5 h-4 border-solid border border-white mx-auto absolute transition hidden z-10"></div>
+            </div>
+            <div id="spaceship" class="w-10 h-10 my-5 ml-0 transition relative">
+                <img src="./assets/spaceship.svg" class="w-10 h-10">
+            </div>
+            <div class="absolute  w-full bg-transparent hidden gap-6 bottom-6 btn-mobile align-middle justify-between btn-up-move items-center">
+                <div class="ml-5 flex items-center rounded-full justify-center relative border-2 border-white w-24 h-24 ">
+                    <div class=" border-2 rounded-full border-white w-16 h-16 absolute btn-move"></div>
+                </div>
+                
+                <button class="w-20 h-20 border-2 border-white rounded-full mr-5 attack">
+                </button>
+            </div>
+            <div class="absolute font-BungeeSpice text-6xl top-1/3 w-full text-center start">
+                Press "S" to Start! <br>
+                <span class="text-3xl">Press "X" to Exit!</span>
+            </div>
+        </div>
+        
+    </section>
+    <footer id="contacts" class=" p-5 lg:h-screen h-full w-full place-items-center bg-[#383838] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ">
+       
+
+        <div class="relative mt-12 w-64 h-64 flex items-center justify-center">
+            <div class="w-64 h-64  animate-gradient-xy bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] absolute blur-md p-0.5"></div>
+            <div class="w-64 h-64  animate-gradient-xy bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] absolute p-0.5"></div>
+            <div class="w-64 h-64  animate-gradient-xy bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] absolute p-0.5">
+                <div class="z-20 w-full h-full  bg-black flex items-center justify-center">
+                    <div class="relative w-full h-full  flex justify-center items-center flex-col gap-5">
+                        <img src="./assets/mail.svg" class="w-24 h-24">
+                        <a href="#" class="text-white text-2xl">eliel.wolf</a>
+                        <div class="relative w-full flex justify-center">
+                            <div class="align-middle animate-gradient-xy text-white absolute flex blur-sm bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] px-6 py-0.5 rounded-md cursor-pointer">GO 
+                              </div>
+                            <div class=" align-middle animate-gradient-xy text-white flex absolute bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] px-6 py-0.5 rounded-md cursor-pointer">GO 
+                            </div>
+                            <div class=" align-middle animate-gradient-xy text-white flex absolute blur-xl bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] px-6 py-0.5 rounded-md cursor-pointer gap-3">GO 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+    </footer>
+    
+    <script src="./js/game.js"></script>
+    <script src="./js/bg-matrix.js"></script>
+    <script>
+       function menu_open(){
+            document.querySelector('#menu').classList.toggle('hidden');
+            document.querySelector('.click_menu').classList.toggle('clicked_menu');
+            document.querySelector('body').classList.toggle("overflow-hidden");
+       }
+        document.querySelector('.click_menu').addEventListener("click", menu_open);
+        
+        let menuMob = document.querySelectorAll(".menu-mob");
+        menuMob.forEach(e => {
+            e.addEventListener('touchend', () => {
+                setTimeout(menu_open, 500);
+            })
+        });
+        let sections = [...document.querySelectorAll('section'), document.querySelector('footer')];
+        let menu_desk = [...document.querySelectorAll('.menu-dsk')];
+        menu_desk.map(menu => check_menu(false, menu));
+        sections.map(section => check_menu(section));
+        menu_desk.map(menu => menu.addEventListener('click',() => {
+            setTimeout(() => {
+                console.log(window.location.href.includes(menu.name))
+                check_menu(false, menu);
+            }, 100)
+            
+        }))
+
+        function check_menu(section=false, menu=false){
+            if(section){
+                if(section.getBoundingClientRect().top <= window.innerHeight/2 && section.getBoundingClientRect().top > 0){
+                    let menu = menu_desk.filter(menu => menu.name == section.id)[0];
+                    menu_desk.map(menu_dsk => menu_dsk.classList.remove('font-BungeeSpice'))
+                    menu.classList.add('font-BungeeSpice');
+                }
+            }
+            else{
+                if(menu){
+                    if(window.location.href.includes(menu.name)){
+                        menu_desk.map(menu_dsk => menu_dsk.classList.remove('font-BungeeSpice'))
+                        menu.classList.add('font-BungeeSpice');
+                    }
+                }
+            }
+        }
+        
+        
+
+        sections.map(section => {
+            window.addEventListener('scroll', () => check_menu(section))
+        })
+
+        
+
+        
+
+       
+
+    </script>
+</body>
+</html>
